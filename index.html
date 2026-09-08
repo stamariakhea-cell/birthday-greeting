@@ -1,54 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday!</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="stage" id="stage">
-  <div class="stars" id="stars"></div>
-  <div class="hearts" id="hearts"></div>
+    <main class="stage" id="stage">
 
-  <div class="eyebrow">a little something for you</div>
-  <h1 class="glow-title">Happy 18th Birthday<span id="nameOut">Ms. Antonette🎉</span></h1>
-  <p class="sub">Wishing you a day as wonderful as you are — and a year ahead full of good surprises.</p>
+        <!-- Animated background -->
+        <div class="stars" id="stars"></div>
+        <div class="hearts" id="hearts"></div>
+        <div class="sparkles" id="sparkles"></div>
 
-  <form class="namebar" id="nameForm">
-    <input type="text" id="nameInput" placeholder="Type a name…" maxlength="24" aria-label="Name of the birthday person">
-    <button type="submit">Make it personal</button>
-  </form>
+        <!-- Balloons -->
+        <div class="balloon balloon1"></div>
+        <div class="balloon balloon2"></div>
+        <div class="balloon balloon3"></div>
 
-  <!-- gift box surprise -->
-  <div class="gift-wrap">
-    <div class="gift" id="gift">
-      <div class="gift-lid"></div>
-      <div class="gift-box"></div>
-      <div class="ribbon-v"></div>
-      <div class="ribbon-h"></div>
-      <div class="bow"></div>
-    </div>
-    <div class="gift-message" id="giftMessage">tap the gift for a little surprise </div>
-  </div>
+        <!-- Clouds -->
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
 
-  <div class="cake-wrap">
-    <div class="cake" id="cake">
-      <div class="smoke"></div>
-      <div class="flame"></div>
-      <div class="wick"></div>
-      <div class="candle"></div>
-      <div class="tier1"></div>
-      <div class="tier2"></div>
-    </div>
-    <div class="plate"></div>
-    <div class="hint" id="hint">tap the candle to make a wish 🕯️</div>
-  </div>
-</div>
+        <!-- Main Content -->
+        <section class="hero">
 
-<script src="script.js"></script>
+            <div class="eyebrow">
+                a little something for you
+            </div>
+
+            <div class="title-line"></div>
+
+            <h1 class="glow-title">
+                Happy 18th Birthday
+            </h1>
+
+            <h2 class="birthday-name">
+                Ms. Antonette
+            </h2>
+
+            <div class="tiny-hearts">
+                ♡ ✦ ♡
+            </div>
+
+            <p class="subtitle">
+                Wishing you a day as wonderful as you are —
+                <br>
+                and a year ahead full of good surprises.
+            </p>
+
+
+            <!-- Gift -->
+            <div class="gift-section">
+
+                <button class="gift" id="gift" aria-label="Open birthday gift">
+
+                    <div class="gift-lid"></div>
+
+                    <div class="gift-box">
+
+                        <div class="gift-ribbon-vertical"></div>
+
+                        <div class="gift-ribbon-horizontal"></div>
+
+                    </div>
+
+                    <div class="bow">
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </button>
+
+                <p class="gift-text">
+                    ♡ tap the gift for a little surprise ♡
+                </p>
+
+            </div>
+
+
+            <!-- Cake -->
+            <div class="cake-section">
+
+                <button class="cake" id="cake" aria-label="Make a birthday wish">
+
+                    <div class="flame"></div>
+
+                    <div class="candle"></div>
+
+                    <div class="cake-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="cake-body">
+                        <div class="icing"></div>
+                    </div>
+
+                    <div class="cake-bottom"></div>
+
+                </button>
+
+                <p class="cake-text">
+                    ✦ tap the cake to make a wish ✦
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Surprise Message -->
+        <div class="surprise" id="surprise">
+
+            <div class="surprise-card">
+
+                <button class="close" id="closeSurprise">
+                    ×
+                </button>
+
+                <div class="surprise-icon">
+                    🎁
+                </div>
+
+                <h3>A Little Surprise For You</h3>
+
+                <p>
+                    May your 18th birthday be filled with
+                    beautiful memories, genuine happiness,
+                    laughter, and moments that you'll always
+                    treasure.
+                </p>
+
+                <p class="special">
+                    Keep shining po. ✨
+                </p>
+
+                <div class="sparkle-message">
+                    ♡ ✦ ♡ ✦ ♡
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Wish Message -->
+        <div class="wish-message" id="wishMessage">
+
+            <div class="wish-card">
+
+                <div class="moon">
+                    ✨
+                </div>
+
+                <h3>Make A Wish</h3>
+
+                <p>
+                    Close your eyes, make your wish,
+                    and let this new chapter of your life
+                    begin with something beautiful.
+                </p>
+
+                <strong>
+                    Happy 18th Birthday! 💜
+                </strong>
+
+                <button id="closeWish">
+                    Thank you ♡
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
